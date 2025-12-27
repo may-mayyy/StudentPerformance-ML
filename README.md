@@ -42,3 +42,99 @@ I implemented and compared:
   - Ensemble of decision trees that can capture nonlinear relationships and interactions between subjects.
 
 ---
+
+### 📏 Evaluation Metrics
+
+Models were evaluated with:
+
+- **Mean Absolute Error (MAE)**
+- **Root Mean Squared Error (RMSE)**
+
+These metrics measure how far predictions are from actual Mathematics scores (in points).
+
+---
+
+### ✅ Main Results
+
+From the experiments:
+
+| Model            | MAE   | RMSE  |
+|------------------|-------|-------|
+| Linear Regression| 7.49  | 9.54  |
+| Random Forest    | 7.21  | 9.28  |
+
+- **Random Forest achieved lower prediction error** (both MAE and RMSE) than Linear Regression.
+- This confirms that **nonlinear methods** like Random Forest can better capture the relationships between school subjects and Mathematics performance.
+
+---
+
+### 🔍 Feature Importance (Random Forest)
+Random Forest feature importance analysis showed that:
+
+- **English**
+- **Science**
+- **Kurdish**
+
+were among the **most influential subjects** for predicting Mathematics scores.
+
+This suggests that:
+
+- language and reading-related skills (e.g., English)  
+- and scientific reasoning (Science)  
+
+may support better performance in Mathematics, for example through improved problem understanding and logical thinking.
+
+---
+
+### 🧠 What I Learned
+
+This project helped me practice:
+
+- working with a **real-world educational dataset**  
+- handling **missing values** and **categorical encoding**  
+- training and comparing **regression models**  
+- evaluating models with **MAE and RMSE**  
+- using **feature importance** to interpret Random Forest models  
+- thinking critically about how data is used in **educational decision-making**
+
+It also showed me how **effort, context, and subject interdependencies** all play a role in student performance, not just “raw ability”.
+
+---
+
+### 🧪 Code & Reproducibility
+
+The main experiment notebook is available here:
+
+- `notebooks/student_math_scores_ml.ipynb`
+
+It includes:
+
+- data loading and preprocessing  
+- training Linear Regression and Random Forest models  
+- computing MAE and RMSE  
+- extracting and saving feature importances
+
+---
+
+###  Research Paper
+
+The full write-up of this project, including references and figures, is available here:
+
+(https://docs.google.com/document/d/174mjH76ykIQsgckZnke4YqxIH_0GhmXn/edit?usp=sharing&ouid=109869815623350786125&rtpof=true&sd=true)
+
+This document follows a formal structure (Abstract, Introduction, Methodology, Results, Conclusion) and cites related work on student performance prediction using machine learning.
+
+---
+
+###  Future Work
+
+Possible extensions include:
+
+- trying additional models (e.g., Gradient Boosting, XGBoost)  
+- adding socio-economic or behavioral variables  
+- testing generalization across other regions or school systems  
+- exploring fairness and bias to ensure that predictions do not disadvantage specific student groups
+
+---
+
+*Author: **Mayssae El Bazi***  
